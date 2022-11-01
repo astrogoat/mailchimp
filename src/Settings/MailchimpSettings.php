@@ -4,7 +4,6 @@ namespace Astrogoat\Mailchimp\Settings;
 
 use Helix\Lego\Settings\AppSettings;
 use Illuminate\Validation\Rule;
-use Astrogoat\Mailchimp\Actions\MailchimpAction;
 
 class MailchimpSettings extends AppSettings
 {
@@ -34,7 +33,7 @@ class MailchimpSettings extends AppSettings
         return 'mailchimp';
     }
 
-    public function help() : array
+    public function help(): array
     {
         return [
             'api_key' => 'Navigate to the <a href="https://us1.admin.mailchimp.com/account/api/" target="_blank">API Keys section</a> of your Mailchimp account.',

@@ -2,9 +2,9 @@
 
 namespace Astrogoat\Mailchimp\Tests;
 
+use Astrogoat\Mailchimp\MailchimpServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Astrogoat\Mailchimp\MailchimpServiceProvider;
 
 class TestCase extends Orchestra
 {

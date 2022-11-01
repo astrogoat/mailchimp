@@ -3,14 +3,14 @@
 namespace Astrogoat\Mailchimp;
 
 use Astrogoat\Mailchimp\Http\Livewire\SubscribeToList;
+use Astrogoat\Mailchimp\Promobar\Types\MailchimpType;
+use Astrogoat\Mailchimp\Settings\MailchimpSettings;
 use Helix\Lego\Apps\App;
 use Helix\Lego\LegoManager;
+use Illuminate\Container\Container;
 use Livewire\Livewire;
 use MailchimpMarketing\ApiClient;
-use Illuminate\Container\Container;
 use Spatie\LaravelPackageTools\Package;
-use Astrogoat\Mailchimp\Settings\MailchimpSettings;
-use Astrogoat\Mailchimp\Promobar\Types\MailchimpType;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
 class MailchimpServiceProvider extends PackageServiceProvider
