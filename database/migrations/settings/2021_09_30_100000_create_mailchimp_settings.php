@@ -7,14 +7,14 @@ class CreateMailchimpSettings extends SettingsMigration
     public function up(): void
     {
         $this->migrator->add('mailchimp.enabled', false);
-        // $this->migrator->add('mailchimp.url', '');
-        // $this->migrator->addEncrypted('mailchimp.access_token', '');
+        $this->migrator->addEncrypted('mailchimp.api_key', '');
+        $this->migrator->add('mailchimp.server_prefix', '');
     }
 
     public function down()
     {
         $this->migrator->delete('mailchimp.enabled');
-        // $this->migrator->delete('mailchimp.url');
-        // $this->migrator->delete('mailchimp.access_token');
+        $this->migrator->delete('mailchimp.api_key');
+        $this->migrator->delete('mailchimp.server_prefix');
     }
 }

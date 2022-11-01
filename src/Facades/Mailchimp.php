@@ -1,16 +1,16 @@
 <?php
 
-namespace Astrogoat\Mailchimp;
+namespace Astrogoat\Mailchimp\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
  * @see \Astrogoat\Mailchimp\Mailchimp
  */
-class MailchimpFacade extends Facade
+class Mailchimp extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return 'mailchimp';
+        return \Astrogoat\Mailchimp\Mailchimp::class;
     }
 }

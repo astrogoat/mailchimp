@@ -24,8 +24,9 @@
     "require": {
         "php": "^8.0",
         "astrogoat/strata": "^0.2.7",
-        "spatie/laravel-package-tools": "^1.4.3",
-        "illuminate/contracts": "^8.37 || ^9.9"
+        "illuminate/contracts": "^8.37 || ^9.9",
+        "mailchimp/marketing": "^3.0",
+        "spatie/laravel-package-tools": "^1.4.3"
     },
     "require-dev": {
         "nunomaduro/collision": "^5.3",
@@ -51,7 +52,10 @@
         "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
     },
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
     },
     "extra": {
         "laravel": {
@@ -59,7 +63,7 @@
                 "Astrogoat\\Mailchimp\\MailchimpServiceProvider"
             ],
             "aliases": {
-                "Mailchimp": "Astrogoat\\Mailchimp\\MailchimpFacade"
+                "Mailchimp": "Astrogoat\\Mailchimp\\Facades\\Mailchimp"
             }
         }
     },
