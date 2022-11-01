@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "astrogoat/mailchimp",
+    "description": "A Mailchimp app for Strata",
     "keywords": [
-        ":vendor_name",
+        "Astrogoat",
         "laravel",
-        ":package_slug"
+        "mailchimp"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/astrogoat/mailchimp",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Kristoffer Tonning",
+            "email": "tonning@gmail.com",
             "role": "Developer"
         }
     ],
@@ -37,13 +37,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "Astrogoat\\Mailchimp\\": "src",
+            "Astrogoat\\Mailchimp\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "Astrogoat\\Mailchimp\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -56,10 +56,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Astrogoat\\Mailchimp\\MailchimpServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\SkeletonFacade"
+                "Mailchimp": "Astrogoat\\Mailchimp\\MailchimpFacade"
             }
         }
     },
