@@ -2,6 +2,7 @@
 
 namespace Astrogoat\Mailchimp;
 
+use Astrogoat\Mailchimp\Settings\Peripherals\Lists;
 use Astrogoat\Mailchimp\Http\Livewire\SubscribeToList;
 use Astrogoat\Mailchimp\Promobar\Types\MailchimpType;
 use Astrogoat\Mailchimp\Settings\MailchimpSettings;
@@ -52,6 +53,7 @@ class MailchimpServiceProvider extends PackageServiceProvider
     public function bootingPackage()
     {
         Livewire::component('astrogoat.mailchimp.subscribe-to-list', SubscribeToList::class);
+        Livewire::component('astrogoat.mailchimp.settings.peripherals.lists', Lists::class);
     }
 
     public function configurePackage(Package $package): void

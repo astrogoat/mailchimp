@@ -4,11 +4,16 @@ namespace Astrogoat\Mailchimp\Settings;
 
 use Helix\Lego\Settings\AppSettings;
 use Illuminate\Validation\Rule;
+use Astrogoat\Mailchimp\Settings\Peripherals\Lists;
 
 class MailchimpSettings extends AppSettings
 {
     public string $api_key;
     public string $server_prefix;
+
+    protected array $peripherals = [
+        Lists::class,
+    ];
 
     public function rules(): array
     {
